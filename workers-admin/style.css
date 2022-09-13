@@ -1,0 +1,13 @@
+h1{
+    text-decoration: underline;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.employee-list{
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+    margin: 15px;
+    text-align: center;
+}
