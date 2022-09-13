@@ -16,12 +16,10 @@ function getEmployees (){
             return data.json();
     })
         .then(({data:employeesData}) => {
-            console.log("employees data:", employeesData);
-            const newEmployeeData = employeesData.map(({employee_name, employee_age}) =>{
-                return  `<li class="employee-list">${employee_name}, ${employee_age}</li>`
+            const newEmployeeData = employeesData.map(({employee_name, employee_age, employee_salary}) =>{
+                return  `<li class="employee-list">${employee_name} age: ${employee_age} salary: ${employee_salary}</li>`
 
             }).join('')
-            console.log("Employees name and age:", newEmployeeData);
             container.innerHTML = newEmployeeData;
         })
 }

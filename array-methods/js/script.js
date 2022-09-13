@@ -33,7 +33,7 @@ const newValue = values.map((element, index,array) =>{
 
 });
 
-// seprate callback function
+// separate callback function
 
 const values = [100, 200, 400, 600];
 
