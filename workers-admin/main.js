@@ -18,7 +18,8 @@ function getEmployees (){
         .then(({data:employeesData}) => {
             console.log("employees data:", employeesData);
             const newEmployeeData = employeesData.map(({employee_name, employee_age}) =>{
-                return  {employee_name, employee_age}
+                return  `<li>${employee_name}, ${employee_age}</li>`
+
             }).join('')
             console.log("Employees name and age:", newEmployeeData);
             container.innerHTML = newEmployeeData;
