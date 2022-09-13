@@ -17,3 +17,27 @@ const newValues = names.map(({firstName, lastName}) =>{
 });
 
 console.log("after map: ", newValues);
+
+
+// Please calculate the area of the triangle inside the given
+// triangle array
+// please use the map function to return an array
+// Return : [1000, 2500, 2.1*105]
+
+const triangles = [
+    {base: 100, height: 200},
+    {base: 50, height: 100},
+    {base: 600, height: 700},
+];
+
+
+const triangleArea = triangles.map(({base, height}) =>{
+    return 0.5 * base * height;
+
+
+})
+
+console.log(triangleArea);
+
+//  almost had it, thought was using string in the return
+
