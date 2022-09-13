@@ -37,7 +37,18 @@ const triangleArea = triangles.map(({base, height}) =>{
 
 })
 
-console.log(triangleArea);
+console.log("Answear to question:", triangleArea);
 
 //  almost had it, thought was using string in the return
+
+// own example of getting area of a square
+
+const square = [
+    {base: 100, height: 100},
+    {base: 100, height: 100},
+    {base: 100, height: 100},
+    {base: 100, height: 100},
+];
+
+console.log(square);
 
