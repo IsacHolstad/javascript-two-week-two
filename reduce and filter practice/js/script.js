@@ -157,6 +157,11 @@ const movieArray = movies.filter((movie) => {
 });
 console.log("Movie in stock and grade over 8.2: ", movieArray);
 
+//const msg = function () {
+//    console.log("this is auto")
+//}
+//setTimeout(msg, 3000)
+
 
 
 
