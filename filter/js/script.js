@@ -76,3 +76,55 @@ const adults = people.filter((person) =>{
 })
 console.log("With age over 22: ", adults);
 
+// Destructing
+const adult = people.filter(({age}) => age >= 22);
+
+console.log("Destructed version: ", adult);
+
+const games = [
+    { title: 'Mayhem Fighter', isMultiplayer: true, rating: 8 },
+    { title: 'Build-a-farm', isMultiplayer: true, rating: 9 },
+    { title: 'Ghost Story', isMultiplayer: false, rating: 8 },
+    { title: 'Fast Car Racer', isMultiplayer: true, rating: 7 },
+    { title: 'Elf and Dwarf RPG', isMultiplayer: false, rating: 8 },
+];
+
+//filter games greater og equal 8
+
+const filteredGames = games.filter((arr) =>{
+    if(arr.isMultiplayer === true && arr.rating >= 8) {
+        return true
+    }
+    else{
+        return  false
+    }
+})
+console.log("Games with multiplayer and rating over 8: ", filteredGames);
+
+
+//own example
+
+const food = [
+    { name: 'snickers', isDiet: false, stars: 2 },
+    { name: 'mars', isDiet: true, stars: 5 },
+    { name: 'chicken', isDiet: true, stars: 9 },
+    { name: 'sandwich', isDiet: false, stars: 4 },
+    { name: 'wrap', isDiet: true, stars: 5 },
+    { name: 'steak', isDiet: true, stars: 8 },
+];
+
+const filteredFood = food.filter((filterArr) => {
+    if(filterArr.isDiet === true && filterArr.stars >= 5){
+        return true
+    }
+    else{
+        return  false
+    }
+});
+
+console.log("Food with diet and stars over 5: ", filteredFood);
+
+
+
+
+
