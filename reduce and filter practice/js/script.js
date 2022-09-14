@@ -155,12 +155,31 @@ const movieArray = movies.filter((movie) => {
         return true
     }
 });
+
 console.log("Movie in stock and grade over 8.2: ", movieArray);
 
 //const msg = function () {
-//    console.log("this is auto")
+//    console.log("this is auto");
 //}
-//setTimeout(msg, 3000)
+//setTimeout(msg, 3000);
+
+const actors = [
+    {nameOfActor: "Brad Pitt", inMovies: 15, age: 54, wife: true},
+    {nameOfActor: "Tom Hanks", inMovies: 23, age: 63, wife: false},
+    {nameOfActor: "Leonardi Dicaprio", inMovies: 24, age: 51, wife: false},
+    {nameOfActor: "Tom cruise", inMovies: 10, age: 59, wife: false},
+    {nameOfActor: "Christian Bale", inMovies: 20, age: 38, wife: false}
+];
+
+const actorArray = actors.filter((actor) => {
+    if(actor.inMovies >= 10 && actor.age >= 51 && actor.wife === false) {
+        return true
+    }
+    else {
+        return false
+    }
+});
+console.log("actors : ", actorArray);
 
 
 
