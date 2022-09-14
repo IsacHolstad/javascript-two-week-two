@@ -113,16 +113,21 @@ const food = [
     { name: 'steak', isDiet: true, stars: 8 },
 ];
 
+
+
 const filteredFood = food.filter((filterArr) => {
     if(filterArr.isDiet === true && filterArr.stars >= 5){
         return true
     }
+    //return (filteredFood === true ) && (rating >= 8) ? true : false;
     else{
         return  false
     }
 });
 
 console.log("Food with diet and stars over 5: ", filteredFood);
+
+
 
 
 
