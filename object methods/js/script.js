@@ -59,8 +59,21 @@ const userProfile = {
     age: 20
 }
  const uerProfileKeys = Object.keys(userProfile);
-console.log(uerProfileKeys);
 
 
-//
+
+// Object.values();
+console.log(Object.values(userProfile))
+// ["name" : "isac"]
+// ["age" : 20]
+
+
+
+
+// Object.entries();
+
+//-Syntax
+//const userProfileEntireArr = Object.entries(userProfile);
+// console.log(userProfileEntireArr);
+
 
