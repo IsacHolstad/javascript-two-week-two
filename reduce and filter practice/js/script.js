@@ -171,15 +171,26 @@ const actors = [
     {nameOfActor: "Christian Bale", inMovies: 20, age: 38, wife: false}
 ];
 
+//const actorArray = actors.filter((actor) => {
+//    if(actor.inMovies >= 10 && actor.age >= 51 && actor.wife === false) {
+//        return true
+//    }
+//   else {
+//       return false
+//   }
+//});
+//console.log("actors : ", actorArray);
+
+
 const actorArray = actors.filter((actor) => {
-    if(actor.inMovies >= 10 && actor.age >= 51 && actor.wife === false) {
+    if(actor.inMovies >= 10 && actor.wife === true){
         return true
     }
     else {
-        return false
+        return  false
     }
 });
-console.log("actors : ", actorArray);
+console.log("actors: ", actorArray);
 
 
 
