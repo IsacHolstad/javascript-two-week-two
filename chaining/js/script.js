@@ -108,6 +108,21 @@ console.log("Average:",classAverage);
 //   .map(/* This map acts on the result of the reduce above */);
 
 
+const users = [
+    { name: 'Kari', id: 19313 },
+    { name: 'Hans', id: 40202 },
+    { name: 'Joakim', id: 59230 },
+    { name: 'Inger', id: 14023 },
+    { name: 'Ellen', id: 76339 },
+];
+
+const foundUser = users.find(({ name }) => name[0].toLowerCase() === 'j');
+
+console.log("joakim in lower case:",foundUser);
+
+////////
+
+
 
 
 
