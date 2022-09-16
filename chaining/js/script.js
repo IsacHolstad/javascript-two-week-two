@@ -63,7 +63,51 @@ const discountedInventoryProducts = inventoryProducts
         product.discountedPrice = product.price * 0.8;
         return product
     });
-console.log( "Chaining:",discountedInventoryProducts);
+console.log("Chaining :",discountedInventoryProducts);
+
+
+// 3. example
+
+const students = [
+    { name: 'Victoria', age: 19, isOnline: true, results: [80, 61, 66, 50, 91] },
+    { name: 'Theo', age: 32, isOnline: false, results: [57, 99, 96, 72, 96] },
+    { name: 'Markus', age: 54, isOnline: true, results: [50, 92, 70, 66, 90] },
+    { name: 'Aksel', age: 21, isOnline: true, results: [77, 86, 70, 71, 75] },
+    { name: 'Felix', age: 29, isOnline: false, results: [99, 76, 59, 74, 68] },
+    { name: 'Benjamin', age: 48, isOnline: true, results: [65, 85, 74, 83, 54] },
+    { name: 'Ulrik', age: 39, isOnline: true, results: [92, 72, 55, 69, 58] },
+    { name: 'Alma', age: 28, isOnline: false, results: [92, 91, 66, 77, 71] },
+    { name: 'July', age: 37, isOnline: true, results: [78, 70, 59, 76, 95] },
+    { name: 'Leo', age: 42, isOnline: true, results: [55, 64, 88, 88, 95] },
+];
+
+const results = students.filter((student) =>{
+    if(student.age >= 30 && student.isOnline === true){
+        return true
+    }
+});
+console.log("age of 30 and online: ",results);
+
+const classAverage = results.reduce((classAverage, student, index, studentArray) =>{
+    //reduce all the strings results to a single average
+    const studentsTotalMarks = student.results.reduce((studentAverage, result, index, resultsArray)=>{
+        studentAverage += result / resultsArray.length;
+        return studentAverage;
+
+    }, 0);
+return classAverage += studentsTotalMarks / studentArray.length;
+}, 0);
+console.log("Average:",classAverage);
+
+
+// own practice examples
+
+//const result = values
+//   .filter(/* This filter first runs */)
+//   .reduce(/* This reduce acts on the result of the filter */)
+//   .map(/* This map acts on the result of the reduce above */);
+
+
 
 
 
